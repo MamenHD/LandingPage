@@ -9,7 +9,7 @@ const Content = () => {
                         className="max-w-sm rounded-lg shadow-2xl"
                     />
                     <div>
-                        <h1 className="text-7xl font-bold pb-4 pe-5">Pembelajaran Terbaik</h1>
+                        <h1 className="md:text-7xl text-5xl font-bold pb-4 pe-5">Pembelajaran Terbaik</h1>
                         <div className="space-y-3 mb-5">
                             <div className="flex items-center text-2xl">
                                 <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
@@ -153,6 +153,20 @@ const Content = () => {
                         <div className="collapse-title font-semibold">Apakah Materinya terjamin?</div>
                         <div className="collapse-content text-sm">Materi dari kami sudah pasti terjamin oleh para ahli.</div>
                     </div>
+                </div>
+            </div>
+
+            {/* New Payment Process Section */}
+            <div className="bg-gray-300 py-12 px-4 text-center md:mx-50 mx-4 md:me-50 me-4 mb-5 rounded-2xl">
+                <div className="max-w-4xl mx-auto">
+                    <div className="text-sm uppercase font-bold tracking-wider mb-2">Upgrade Pengetahuanmu</div>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6">Bersama Sinersi & Sivoki</h2>
+                    <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+                        <button className="btn btn-primary px-8 ">Gabung Sekarang</button>
+                    </div>
+                    <p className="text-lg max-w-2xl mx-auto">
+                        Platform pembelajaran ners dan keperawatan lengkap dan terjamin.
+                    </p>
                 </div>
             </div>
         </main>
