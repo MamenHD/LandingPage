@@ -65,6 +65,29 @@ const Content = () => {
                     </div>
                 </div>
             </div>
+
+
+            <div>
+                <h1 className="text-4xl px-4 py-7"><b>Pertanyaan Umum</b></h1>
+
+                <div className="m-4 mb-7">
+                <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" defaultChecked />
+                    <div className="collapse-title font-semibold">Sistem langganan bagaimana?</div>
+                    <div className="collapse-content text-sm">Untuk Langganan kita menerapkan masa aktif sampai 3 bulan.</div>
+                </div>
+                <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold">Untuk cara pembayaran bagaimana?</div>
+                    <div className="collapse-content text-sm">Untuk pembayaran bisa melalui Qris atau transfer bank.</div>
+                </div>
+                <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold">Apakah Materinya terjamin?</div>
+                    <div className="collapse-content text-sm">Materi dari kami sudah pasti terjamin oleh para ahli.</div>
+                </div>
+                </div>
+            </div>
         </main>
     )
 }
