@@ -29,16 +29,16 @@ const Content = () => {
                 </div>
             </div>
 
-            {/* Stats Section - Now centered between hero and content */}
-            <div className="flex justify-center my-8">
-                <div className="stats shadow w-full max-w-4xl">
+            {/* Stats Section - Responsive */}
+            <div className="flex justify-center my-4 md:my-8 px-2">
+                <div className="stats stats-vertical md:stats-horizontal shadow w-full max-w-4xl">
                     <div className="stat">
                         <div className="stat-figure text-secondary">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
-                                className="inline-block h-8 w-8 stroke-current"
+                                className="inline-block h-6 w-6 md:h-8 md:w-8 stroke-current"
                             >
                                 <path
                                     strokeLinecap="round"
@@ -48,9 +48,9 @@ const Content = () => {
                                 ></path>
                             </svg>
                         </div>
-                        <div className="stat-title">Materi</div>
-                        <div className="stat-value">1K+</div>
-                        <div className="stat-desc">Terupdate</div>
+                        <div className="stat-title text-sm md:text-base">Materi</div>
+                        <div className="stat-value text-2xl md:text-3xl">1K+</div>
+                        <div className="stat-desc text-xs md:text-sm">Terupdate</div>
                     </div>
 
                     <div className="stat">
@@ -59,7 +59,7 @@ const Content = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
-                                className="inline-block h-8 w-8 stroke-current"
+                                className="inline-block h-6 w-6 md:h-8 md:w-8 stroke-current"
                             >
                                 <path
                                     strokeLinecap="round"
@@ -69,9 +69,9 @@ const Content = () => {
                                 ></path>
                             </svg>
                         </div>
-                        <div className="stat-title">Pengguna</div>
-                        <div className="stat-value">5,000</div>
-                        <div className="stat-desc">↗︎ 400 (22%)</div>
+                        <div className="stat-title text-sm md:text-base">Pengguna</div>
+                        <div className="stat-value text-2xl md:text-3xl">5,000</div>
+                        <div className="stat-desc text-xs md:text-sm">↗︎ 400 (22%)</div>
                     </div>
 
                     <div className="stat">
@@ -80,7 +80,7 @@ const Content = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
-                                className="inline-block h-8 w-8 stroke-current"
+                                className="inline-block h-6 w-6 md:h-8 md:w-8 stroke-current"
                             >
                                 <path
                                     strokeLinecap="round"
@@ -90,9 +90,9 @@ const Content = () => {
                                 ></path>
                             </svg>
                         </div>
-                        <div className="stat-title">Pengguna Baru</div>
-                        <div className="stat-value">2,200</div>
-                        <div className="stat-desc">↘︎ 90 (14%)</div>
+                        <div className="stat-title text-sm md:text-base">Pengguna Baru</div>
+                        <div className="stat-value text-2xl md:text-3xl">2,200</div>
+                        <div className="stat-desc text-xs md:text-sm">↘︎ 90 (14%)</div>
                     </div>
                 </div>
             </div>
