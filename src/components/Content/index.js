@@ -3,10 +3,10 @@ const Content = () => {
         <main>
             {/* Hero Section */}
             <div className="hero bg-base-200">
-                <div className="hero-content flex-col lg:flex-row-reverse">
+                <div className="hero-content flex-col lg:flex-row-reverse m-10">
                     <img
                         src="img/main.jpg"
-                        className="max-w-sm rounded-lg shadow-2xl"
+                        className="md:max-w-sm rounded-lg shadow-2xl "
                     />
                     <div>
                         <h1 className="md:text-7xl text-5xl font-bold pb-4 pe-5">Pembelajaran Terbaik</h1>
@@ -24,7 +24,7 @@ const Content = () => {
                                 <span>Simulasi ujian realistis</span>
                             </div>
                         </div>
-                        <button className="btn btn-primary">Mulai Belajar</button>
+                        <a href="#Belajar"><button className="btn btn-outline btn-info">Mulai Belajar</button></a>
                     </div>
                 </div>
             </div>
@@ -99,43 +99,56 @@ const Content = () => {
 
             {/* Main Content */}
             <div>
-                <h1 className="text-center p-7 md:text-4xl text-2xl divider"><b>Platform Belajar Nyaman</b></h1>
+                <h1 className="text-center p-7 md:text-4xl text-2xl"><b>Platform Belajar Nyaman</b></h1>
             </div>
 
-            <div className="flex w-full flex-col md:flex-row pe-4 px-4 pb-8 indicator items-center justify-center">
+            <div className="flex w-full flex-col md:flex-row pe-4 px-4 pb-8 indicator items-center justify-center" id="Belajar">
                 <div className="card bg-base-100 w-96 shadow-sm">
                     <figure>
                         <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
+                            src="img/siners.png"
+                            alt="Sinersi" />
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <h2 className="card-title">SinersiMobile</h2>
+                        <p>Platform latihan UJI KOMPETENSI NERS Terbaik di Indonesia<br/> Pelatihan NERS terbaik dengan materi terupdate dari tim AIPNI buat kamu KOMPETEN di UKOMNAS</p>
                         <div className="card-actions">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <a href="https://sinersimobile.id"><button className="btn btn-info">Kunjungi</button></a>
                         </div>
                     </div>
                 </div>
-                <div className="divider md:divider-horizontal">OR</div>
+                <div className="divider md:divider-horizontal">Atau</div>
                 <div className="card bg-base-100 w-96 shadow-sm">
                     <figure>
                         <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
+                            src="img/sivoki.png"
+                            alt="Sivoki" />
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <h2 className="card-title">SivokiMobile</h2>
+                        <p>Platform Latihan Keperawatan Dengan Simulasi UKOMNAS <br/>Terdiri dari 800+ soal soal terupdate dan simulasi soal Try Out layaknya UKOM yang dibuat oleh tim AIPViKI</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <a href="https://sivokimobile.id"><button className="btn btn-info">Kunjungi</button></a>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className="bg-gray-100 py-12 px-4 text-center md:mx-50 mx-4 md:me-50 me-4 mb-5 rounded-2xl">
+                <div className="max-w-4xl mx-auto">
+                    <div className="text-sm uppercase font-bold tracking-wider mb-2">Upgrade Pengetahuanmu</div>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6">Bersama Sinersi & Sivoki</h2>
+                    <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+                        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl btn-secondary ">Gabung Sekarang</button>
+                    </div>
+                    <p className="text-lg max-w-2xl mx-auto">
+                        Platform pembelajaran ners dan keperawatan lengkap dan terjamin.
+                    </p>
                 </div>
             </div>
 
             <div>
-                <h1 className="text-4xl px-4 py-7"><b>Pertanyaan Umum</b></h1>
+                <h1 className="text-4xl px-4 py-7 text-center"><b>Pertanyaan Umum</b></h1>
 
                 <div className="m-4 mb-7">
                     <div className="collapse collapse-arrow bg-base-100 border border-base-300">
@@ -153,20 +166,6 @@ const Content = () => {
                         <div className="collapse-title font-semibold">Apakah Materinya terjamin?</div>
                         <div className="collapse-content text-sm">Materi dari kami sudah pasti terjamin oleh para ahli.</div>
                     </div>
-                </div>
-            </div>
-
-            {/* New Payment Process Section */}
-            <div className="bg-gray-300 py-12 px-4 text-center md:mx-50 mx-4 md:me-50 me-4 mb-5 rounded-2xl">
-                <div className="max-w-4xl mx-auto">
-                    <div className="text-sm uppercase font-bold tracking-wider mb-2">Upgrade Pengetahuanmu</div>
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6">Bersama Sinersi & Sivoki</h2>
-                    <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-                        <button className="btn btn-primary px-8 ">Gabung Sekarang</button>
-                    </div>
-                    <p className="text-lg max-w-2xl mx-auto">
-                        Platform pembelajaran ners dan keperawatan lengkap dan terjamin.
-                    </p>
                 </div>
             </div>
         </main>

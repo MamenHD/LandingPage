@@ -34,7 +34,7 @@ const Footer = () => {
                 </nav>
                 <nav>
                     <h6 className="footer-title">Kontak</h6>
-                    <a>Hubungi <a className="link link-hover" href="/">08xxxxxxx</a> jika <br/> terdapat masalah.</a>
+                    <p>Hubungi <a className="link link-hover" href="/">08xxxxxxx</a> jika <br/> terdapat masalah.</p>
                 </nav>
             </footer>
         </main>

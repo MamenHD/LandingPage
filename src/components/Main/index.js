@@ -10,13 +10,13 @@ const Hero = () => {
             >
                 <div className="hero-overlay"></div>
                 <div className="hero-content text-neutral-content text-center">
-                    <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">Fokus pada Persiapan Ujian</h1>
-                        <p className="mb-5">
-                            Sukses Ujian Ners & Keperawatan Lebih Mudah dengan Sinersi & Sivoki!
-                            Tryout berkualitas, pembahasan lengkap, dan simulasi ujian terbaik. Siapkan dirimu sekarang!
+                    <div className="">
+                        <h1 className="md:text-7xl text-5xl font-bold ">Hadapi Ujian Dengan Mudah</h1>
+                        <h1 className="mb-8 md:text-7xl text-5xl font-bold bg-gradient-to-r from-white via-red-300 to-indigo-400 inline-block text-transparent bg-clip-text">Bersama Kami</h1>
+                        <p className="md:mb-10 mb-6 md:text-4xl text-xl">
+                            Sinersi & Sivoki Platform Online Course<br/> simulasi ujian realistis dan materi terjamin
                         </p>
-                        <button className="btn btn-primary">Mulai Belajar</button>
+                        <button className="btn btn-soft btn-secondary md:text-3xl md:p-7 md:rounded-2xl text-2xl p-5 rounded-xl">Mulai Belajar</button>
                     </div>
                 </div>
             </div>
