@@ -6,25 +6,25 @@ const Content = () => {
                 <div className="hero-content flex-col lg:flex-row-reverse m-10">
                     <img
                         src="img/main.jpg"
-                        className="md:max-w-sm rounded-lg shadow-2xl "
+                        className="md:max-w-sm rounded-lg shadow-2xl motion-rotate-loop-[6deg] motion-duration-[1000ms] motion-ease-spring-bounciest "
                     />
                     <div>
-                        <h1 className="md:text-7xl text-5xl font-bold pb-4 pe-5">Pembelajaran Terbaik</h1>
+                        <h1 className="md:text-7xl text-5xl font-bold pb-4 pe-5 motion-scale-in-[1.5] motion-opacity-in-[0%] motion-delay-[3ms] motion-delay-[0ms]/scale motion-delay-[0ms]/opacity motion-ease-spring-bouncier">Pembelajaran Terbaik</h1>
                         <div className="space-y-3 mb-5">
-                            <div className="flex items-center text-2xl">
-                                <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <div className="flex items-center text-2xl motion-translate-x-in-[25%] motion-translate-y-in-[0%] motion-duration-[1000ms] motion-delay-[2ms] motion-delay-[0ms]/translate">
+                                <div className="w-2 h-2 bg-primary rounded-full mr-3 "></div>
                                 <span>Latihan soal berkualitas</span>
                             </div>
-                            <div className="flex items-center text-2xl">
+                            <div className="flex items-center text-2xl motion-translate-x-in-[25%] motion-translate-y-in-[0%] motion-duration-[1300ms] motion-delay-[3ms] motion-delay-[0ms]/translate">
                                 <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
                                 <span>Pembahasan mendalam</span>
                             </div>
-                            <div className="flex items-center text-2xl">
-                                <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            <div className="flex items-center text-2xl motion-translate-x-in-[25%] motion-translate-y-in-[0%] motion-duration-[1500ms] motion-delay-[4ms] motion-delay-[0ms]/translate">
+                                <div className="w-2 h-2 bg-accent rounded-full mr-3 "></div>
                                 <span>Simulasi ujian realistis</span>
                             </div>
                         </div>
-                        <a href="#Belajar"><button className="btn btn-outline btn-info">Mulai Belajar</button></a>
+                        <a href="#Belajar"><button className="btn btn-outline btn-info motion-translate-x-in-[25%] motion-translate-y-in-[0%] motion-duration-[1000ms] motion-delay-[2ms] motion-delay-[0ms]/translate">Mulai Belajar</button></a>
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@ const Content = () => {
                     <div className="text-sm uppercase font-bold tracking-wider mb-2">Upgrade Pengetahuanmu</div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">Bersama Sinersi & Sivoki</h2>
                     <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-                        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl btn-secondary ">Gabung Sekarang</button>
+                        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl btn-secondary motion-scale-loop-[1.25] motion-duration-[1000ms] motion-ease-in-out">Gabung Sekarang</button>
                     </div>
                     <p className="text-lg max-w-2xl mx-auto">
                         Platform pembelajaran ners dan keperawatan lengkap dan terjamin.

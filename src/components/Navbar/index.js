@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className={`navbar  shadow-sm sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-gray-100' : ''}`}>
             
                 <div className="navbar-start">
-                    <a className="btn btn-ghost text-xl" href="/">Sinersi & Sivoki</a>
+                    <a className="btn btn-ghost text-xl motion-translate-x-in-[-5%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-blur-in-[5px] motion-duration-[1000ms] motion-ease-spring-smooth" href="/">Sinersi & Sivoki</a>
                 </div>
                 
                 {/* Desktop Menu */}
