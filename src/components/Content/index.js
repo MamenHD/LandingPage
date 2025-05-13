@@ -110,10 +110,10 @@ const Content = () => {
                             alt="Sinersi" />
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title">SinersiMobile</h2>
+                        <h2 className="card-title mb-4">SinersiMobile</h2>
                         <p>Platform latihan UJI KOMPETENSI NERS Terbaik di Indonesia<br/> Pelatihan NERS terbaik dengan materi terupdate dari tim AIPNI buat kamu KOMPETEN di UKOMNAS</p>
                         <div className="card-actions">
-                            <a href="https://sinersimobile.id"><button className="btn btn-info">Kunjungi</button></a>
+                            <a href="https://sinersimobile.id"><button className="btn btn-info mt-5">Kunjungi</button></a>
                         </div>
                     </div>
                 </div>
@@ -125,10 +125,10 @@ const Content = () => {
                             alt="Sivoki" />
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title">SivokiMobile</h2>
+                        <h2 className="card-title mb-4">SivokiMobile</h2>
                         <p>Platform Latihan Keperawatan Dengan Simulasi UKOMNAS <br/>Terdiri dari 800+ soal soal terupdate dan simulasi soal Try Out layaknya UKOM yang dibuat oleh tim AIPViKI</p>
                         <div className="card-actions justify-end">
-                            <a href="https://sivokimobile.id"><button className="btn btn-info">Kunjungi</button></a>
+                            <a href="https://sivokimobile.id"><button className="btn btn-info mt-5">Kunjungi</button></a>
                         </div>
                     </div>
                 </div>

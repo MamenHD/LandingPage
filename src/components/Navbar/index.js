@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-const avbar = () => {
+const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -28,28 +28,31 @@ const avbar = () => {
         <div className={`navbar  shadow-sm sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-gray-100' : ''}`}>
             
                 <div className="navbar-start">
-                    <a className="btn btn-ghost text-xl" href="/">Nama</a>
+                    <a className="btn btn-ghost text-xl" href="/">Sinersi & Sivoki</a>
                 </div>
                 
                 {/* Desktop Menu */}
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center hidden lg:flex indicator">
                     <ul className="menu menu-horizontal px-1">
                         <li><a>Beranda</a></li>
+                        
                         <li>
+                            
                             <details className="dropdown dropdown-hover">
+                                
                                 <summary>Kelas</summary>
                                 <ul className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm">
-                                    <li><a>Item 1</a></li>
-                                    <li><a>Item 2</a></li>
+                                    <span className="indicator-item badge badge-primary">New</span>
+                                    <li><a href='https://sinersimobile.idq'>Sinersi</a></li>
+                                    <li><a href='https://sivokimobile.id'>Sivoki</a></li>
                                 </ul>
                             </details>
                         </li>
-                        <li><a>Kontak</a></li>
                     </ul>
                 </div>
                 
                 <div className="navbar-end">
-                    <a className="btn hidden sm:inline-flex" href="/">Gabung</a>
+                    <a className="btn hidden sm:inline-flex" href="#Belajar">Gabung</a>
                     
                     {/* Tombol Hamburger */}
                     <button 
@@ -84,8 +87,8 @@ const avbar = () => {
                                     <details open>
                                         <summary className="text-lg">Kelas</summary>
                                         <ul>
-                                            <li><a onClick={() => setIsOpen(false)}>Item 1</a></li>
-                                            <li><a onClick={() => setIsOpen(false)}>Item 2</a></li>
+                                            <li><a href='https://sinersimobile.id' onClick={() => setIsOpen(false)}>Sinersi</a></li>
+                                            <li><a href='https://sivokimobile.id' onClick={() => setIsOpen(false)}>Sivoki</a></li>
                                         </ul>
                                     </details>
                                 </li>
@@ -102,4 +105,4 @@ const avbar = () => {
     )
 }
 
-export default avbar;
+export default Navbar;
