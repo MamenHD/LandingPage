@@ -16,7 +16,7 @@ const Hero = () => {
                         <p className="md:mb-10 mb-6 md:text-4xl text-xl motion-translate-x-in-[-5%] motion-translate-y-in-[0%] motion-opacity-in-[0%] motion-blur-in-[5px] motion-duration-[1000ms] motion-delay-[2ms] motion-delay-[0ms]/translate motion-delay-[0ms]/opacity motion-delay-[0ms]/blur motion-ease-out-cubic">
                             Sinersi & Sivoki Platform Online Course<br/> simulasi ujian realistis dan materi terjamin
                         </p>
-                        <a href="#Belajar"><button className="btn btn-soft btn-secondary md:text-3xl md:p-7 md:rounded-2xl text-2xl p-5 rounded-xl motion-translate-x-loop-[0%] motion-translate-y-loop-[100%] motion-duration-[2000ms]/translate motion-ease-spring-bouncier">Mulai Belajar</button></a>
+                        <a href="#belajar"><button className="btn btn-soft btn-primary md:text-3xl md:p-7 md:rounded-2xl text-2xl p-5 rounded-xl motion-translate-x-loop-[0%] motion-translate-y-loop-[100%] motion-duration-[2000ms]/translate motion-ease-spring-bouncier">Mulai Belajar</button></a>
                     </div>
                 </div>
             </div>

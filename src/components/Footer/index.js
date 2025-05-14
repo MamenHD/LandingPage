@@ -14,6 +14,7 @@ const Footer = () => {
                     <a className="link link-hover" href="/">Beranda</a>
                     <a className="link link-hover" href="https://sinersimobile.id">Sinersi</a>
                     <a className="link link-hover" href="https://sivokimobile.id">Sivoki</a>
+                    <a className="link link-hover" href="/kontak">Kontak</a>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Kelas</h6>
@@ -28,7 +29,7 @@ const Footer = () => {
 
             <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
                 <aside>
-                    <p>Copyright © {new Date().getFullYear()} - All right reserved 2025 by <a href="/">MamenHD</a></p>
+                    <p>Copyright © {new Date().getFullYear()} - All right reserved by <a href="/">MamenHD</a></p>
                 </aside>
             </footer>
         </main>

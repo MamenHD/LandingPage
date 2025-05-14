@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -34,7 +35,7 @@ const Navbar = () => {
                 {/* Desktop Menu */}
                 <div className="navbar-center hidden lg:flex indicator">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a>Beranda</a></li>
+                        <li><Link href='/'>Beranda</Link></li>
                         
                         <li>
                             
@@ -43,16 +44,18 @@ const Navbar = () => {
                                 <summary>Kelas</summary>
                                 <ul className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm">
                                     <span className="indicator-item badge badge-primary">New</span>
-                                    <li><a href='https://sinersimobile.idq'>Sinersi</a></li>
-                                    <li><a href='https://sivokimobile.id'>Sivoki</a></li>
+                                    <li><Link href='https://sinersimobile.idq'>Sinersi</Link></li>
+                                    <li><Link href='https://sivokimobile.id'>Sivoki</Link></li>
                                 </ul>
                             </details>
                         </li>
+
+                        <li><Link href="/contact">Kontak</Link></li>
                     </ul>
                 </div>
                 
                 <div className="navbar-end">
-                    <a className="btn hidden sm:inline-flex" href="#Belajar">Gabung</a>
+                    <a className="btn hidden sm:inline-flex" href="#belajar">Gabung</a>
                     
                     {/* Tombol Hamburger */}
                     <button 
@@ -74,6 +77,7 @@ const Navbar = () => {
                     </button>
                 </div>
                 
+                
                 {/* Mobile Menu */}
                 {isOpen && (
                     <div className="fixed lg:hidden inset-0 bg-opacity-50 z-10" onClick={() => setIsOpen(false)}>
@@ -82,19 +86,19 @@ const Navbar = () => {
                             onClick={(e) => e.stopPropagation()}
                         >
                             <ul className="menu p-4 w-full">
-                                <li><a className="text-lg" onClick={() => setIsOpen(false)}>Beranda</a></li>
+                                <li><Link className="text-lg" href='/' onClick={() => setIsOpen(false)}>Beranda</Link></li>
                                 <li className="menu-dropdown">
                                     <details open>
                                         <summary className="text-lg">Kelas</summary>
                                         <ul>
-                                            <li><a href='https://sinersimobile.id' onClick={() => setIsOpen(false)}>Sinersi</a></li>
-                                            <li><a href='https://sivokimobile.id' onClick={() => setIsOpen(false)}>Sivoki</a></li>
+                                            <li><Link href='https://sinersimobile.id' onClick={() => setIsOpen(false)}>Sinersi</Link></li>
+                                            <li><Link href='https://sivokimobile.id' onClick={() => setIsOpen(false)}>Sivoki</Link></li>
                                         </ul>
                                     </details>
                                 </li>
-                                <li><a className="text-lg" onClick={() => setIsOpen(false)}>Kontak</a></li>
+                                <li><Link className="text-lg" href="/contact" onClick={() => setIsOpen(false)}>Kontak</Link></li>
                                 <li className="mt-2">
-                                    <a className="btn btn-block" href="/" onClick={() => setIsOpen(false)}>Gabung</a>
+                                    <Link className="btn btn-block" href="/" onClick={() => setIsOpen(false)}>Gabung</Link>
                                 </li>
                             </ul>
                         </div>
