@@ -23,13 +23,13 @@ const Footer = () => {
                 </nav>
                 <nav>
                     <h6 className="footer-title">Kontak</h6>
-                    <p>Hubungi <a className="link link-hover" href="/">08xxxxxxx</a> jika <br /> terdapat masalah.</p>
+                    <p>Hubungi <a className="link link-hover" href="/">0858-8310-8588</a> jika <br /> terdapat masalah.</p>
                 </nav>
             </footer>
 
             <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
                 <aside>
-                    <p>Copyright © {new Date().getFullYear()} - All right reserved by <a href="/">MamenHD</a></p>
+                    <p>Copyright © {new Date().getFullYear()} - All right reserved by <a href="https://github.com/MamenHD">MamenHD</a></p>
                 </aside>
             </footer>
         </main>

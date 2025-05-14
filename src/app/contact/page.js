@@ -27,7 +27,7 @@ const Contact = () => {
                             </svg>
                             <div>
                                 <p className="text-gray-600">Nomor HP</p>
-                                <p className="font-medium text-gray-800">+62 8xx xxx xxx</p>
+                                <p className="font-medium text-gray-800">+62 858-8310-8588</p>
                             </div>
                         </div>
                         
@@ -71,7 +71,7 @@ const Contact = () => {
                             </svg>
                             <div>
                                 <p className="text-gray-600">Nomor HP</p>
-                                <p className="font-medium text-gray-800">+62 8xx xxx xxx</p>
+                                <p className="font-medium text-gray-800">+62 813-8314-8181</p>
                             </div>
                         </div>
                         
