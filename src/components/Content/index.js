@@ -1,171 +1,180 @@
+"use client";
+
+import AOS from 'aos';
+import { useEffect } from 'react';
+
 const Content = () => {
+    useEffect(() => {
+        AOS.init({})
+    }, [])
     return (
-        <main>
-            {/* Hero Section */}
-            <div className="hero bg-base-200">
-                <div className="hero-content flex-col lg:flex-row-reverse m-10">
+        <main className="bg-gradient-to-b from-blue-50 to-white">
+            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+            
+            {/* Bagian Utama - Redesain */}
+            <div className="hero min-h-screen">
+                <div className="hero-content flex-col lg:flex-row-reverse gap-6 lg:gap-12 px-4">
                     <img
                         src="img/main.jpg"
-                        className="md:max-w-sm rounded-lg shadow-2xl motion-rotate-loop-[6deg] motion-duration-[1000ms] motion-ease-spring-bounciest "
+                        className="w-full md:max-w-lg rounded-lg shadow-2xl"
+                        data-aos="fade-up"
+                        alt="Siswa Belajar"
                     />
-                    <div>
-                        <h1 className="md:text-7xl text-5xl font-bold pb-4 pe-5 motion-scale-in-[1.5] motion-opacity-in-[0%] motion-delay-[3ms] motion-delay-[0ms]/scale motion-delay-[0ms]/opacity motion-ease-spring-bouncier">Pembelajaran Terbaik</h1>
-                        <div className="space-y-3 mb-5">
-                            <div className="flex items-center text-2xl motion-translate-x-in-[25%] motion-translate-y-in-[0%] motion-duration-[1000ms] motion-delay-[2ms] motion-delay-[0ms]/translate">
-                                <div className="w-2 h-2 bg-primary rounded-full mr-3 "></div>
-                                <span>Latihan soal berkualitas</span>
+                    <div data-aos="fade-right" className="text-center lg:text-left px-2">
+                        <h1 className="text-3xl md:text-5xl font-bold">
+                            <span className="text-blue-600">Hadapi Ujian</span><br/>
+                            <span className="text-gray-800">Dengan Mudah</span><br/>
+                            <span className="text-blue-400">Bersama Kami</span>
+                        </h1>
+                        <p className="py-4 md:py-6 text-base md:text-lg">
+                            Platform kursus online Sinersi & Sivoki menyediakan simulasi ujian realistis 
+                            dan materi pembelajaran terjamin untuk membantu kesuksesan akademik Anda.
+                        </p>
+                        <a href='#belajar'><button className="btn btn-primary px-6 py-2 md:px-8 md:py-3 text-base md:text-lg">
+                            Mulai Belajar Sekarang
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+
+            {/* Fitur Unggulan */}
+            <div className="container mx-auto px-4 py-12 md:py-16">
+                <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12" data-aos="fade-up">
+                    Mengapa Memilih Kami?
+                </h2>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                    <div className="card bg-white shadow-xl p-4 md:p-6" data-aos="flip-up">
+                        <div className="text-blue-500 text-3xl md:text-4xl mb-3 md:mb-4">📚</div>
+                        <h3 className="text-lg md:text-xl font-semibold mb-2">Materi Lengkap</h3>
+                        <p className="text-sm md:text-base">Kurikulum terupdate mencakup semua topik ujian dengan pembahasan mendalam.</p>
+                    </div>
+                    
+                    <div className="card bg-white shadow-xl p-4 md:p-6" data-aos="flip-up" data-aos-delay="200">
+                        <div className="text-blue-500 text-3xl md:text-4xl mb-3 md:mb-4">✍️</div>
+                        <h3 className="text-lg md:text-xl font-semibold mb-2">Latihan Soal</h3>
+                        <p className="text-sm md:text-base">Bank soal berkualitas tinggi dengan variasi pertanyaan mirip ujian sebenarnya.</p>
+                    </div>
+                    
+                    <div className="card bg-white shadow-xl p-4 md:p-6" data-aos="flip-up" data-aos-delay="400">
+                        <div className="text-blue-500 text-3xl md:text-4xl mb-3 md:mb-4">⏱️</div>
+                        <h3 className="text-lg md:text-xl font-semibold mb-2">Simulasi Ujian</h3>
+                        <p className="text-sm md:text-base">Pengalaman ujian realistis dengan timer dan penilaian otomatis.</p>
+                    </div>
+                </div>
+            </div>
+
+            {/* Platform Kami */}
+            <div className="bg-blue-400 text-white py-12 md:py-16" id='belajar'>
+                <div className="container mx-auto px-4">
+                    <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12" data-aos="fade-up" >
+                        Platform Kami
+                    </h2>
+                    
+                    <div className="flex flex-col md:flex-row gap-6 md:gap-8 justify-center items-center">
+                        <div className="card bg-white text-gray-800 w-full max-w-sm md:max-w-md" data-aos="fade-down-right">
+                            <figure className="px-6 md:px-10 pt-6 md:pt-10">
+                                <img src="img/siners.png" alt="Sinersi" className="rounded-xl w-full" />
+                            </figure>
+                            <div className="card-body items-center text-center p-4 md:p-6">
+                                <h2 className="card-title text-lg md:text-xl">SinersiMobile</h2>
+                                <p className="text-sm md:text-base">Platform latihan UJI KOMPETENSI NERS terbaik di Indonesia dengan materi terupdate dari tim AIPNI.</p>
+                                <div className="card-actions mt-3 md:mt-4">
+                                    <a href="https://sinersimobile.id" className="btn btn-primary btn-sm md:btn-md">Kunjungi</a>
+                                </div>
                             </div>
-                            <div className="flex items-center text-2xl motion-translate-x-in-[25%] motion-translate-y-in-[0%] motion-duration-[1300ms] motion-delay-[3ms] motion-delay-[0ms]/translate">
-                                <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
-                                <span>Pembahasan mendalam</span>
+                        </div>
+                        
+                        <div className="text-lg md:text-xl font-bold my-3 md:my-4" data-aos="fade-up">ATAU</div>
+                        
+                        <div className="card bg-white text-gray-800 w-full max-w-sm md:max-w-md" data-aos="fade-up-right">
+                            <figure className="px-6 md:px-10 pt-6 md:pt-10">
+                                <img src="img/sivoki.png" alt="Sivoki" className="rounded-xl w-full" />
+                            </figure>
+                            <div className="card-body items-center text-center p-4 md:p-6">
+                                <h2 className="card-title text-lg md:text-xl">SivokiMobile</h2>
+                                <p className="text-sm md:text-base">Platform latihan keperawatan dengan simulasi UKOMNAS dan 800+ soal terupdate dari tim AIPViKI.</p>
+                                <div className="card-actions mt-3 md:mt-4">
+                                    <a href="https://sivokimobile.id" className="btn btn-primary btn-sm md:btn-md">Kunjungi</a>
+                                </div>
                             </div>
-                            <div className="flex items-center text-2xl motion-translate-x-in-[25%] motion-translate-y-in-[0%] motion-duration-[1500ms] motion-delay-[4ms] motion-delay-[0ms]/translate">
-                                <div className="w-2 h-2 bg-accent rounded-full mr-3 "></div>
-                                <span>Simulasi ujian realistis</span>
-                            </div>
                         </div>
-                        <a href="#Belajar"><button className="btn btn-outline btn-info motion-translate-x-in-[25%] motion-translate-y-in-[0%] motion-duration-[1000ms] motion-delay-[2ms] motion-delay-[0ms]/translate">Mulai Belajar</button></a>
                     </div>
                 </div>
             </div>
 
-            {/* Stats Section - Responsive */}
-            <div className="flex justify-center my-4 md:my-8 px-2">
-                <div className="stats stats-vertical md:stats-horizontal shadow w-full max-w-4xl">
+            {/* Statistik */}
+            <div className="container mx-auto px-4 py-12 md:py-16">
+                <div className="stats stats-vertical md:stats-horizontal shadow w-full" data-aos="zoom-in">
                     <div className="stat">
-                        <div className="stat-figure text-secondary">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                className="inline-block h-6 w-6 md:h-8 md:w-8 stroke-current"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                                ></path>
-                            </svg>
-                        </div>
-                        <div className="stat-title text-sm md:text-base">Materi</div>
-                        <div className="stat-value text-2xl md:text-3xl">1K+</div>
-                        <div className="stat-desc text-xs md:text-sm">Terupdate</div>
+                        <div className="stat-title">Materi Pembelajaran</div>
+                        <div className="stat-value text-blue-600">1K+</div>
+                        <div className="stat-desc">Terupdate secara berkala</div>
                     </div>
-
+                    
                     <div className="stat">
-                        <div className="stat-figure text-secondary">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                className="inline-block h-6 w-6 md:h-8 md:w-8 stroke-current"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-                                ></path>
-                            </svg>
-                        </div>
-                        <div className="stat-title text-sm md:text-base">Pengguna</div>
-                        <div className="stat-value text-2xl md:text-3xl">5,000</div>
-                        <div className="stat-desc text-xs md:text-sm">↗︎ 400 (22%)</div>
+                        <div className="stat-title">Pengguna Aktif</div>
+                        <div className="stat-value text-blue-600">5,000+</div>
+                        <div className="stat-desc">Peserta bergabung</div>
                     </div>
-
+                    
                     <div className="stat">
-                        <div className="stat-figure text-secondary">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                className="inline-block h-6 w-6 md:h-8 md:w-8 stroke-current"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
-                                ></path>
-                            </svg>
-                        </div>
-                        <div className="stat-title text-sm md:text-base">Pengguna Baru</div>
-                        <div className="stat-value text-2xl md:text-3xl">2,200</div>
-                        <div className="stat-desc text-xs md:text-sm">↘︎ 90 (14%)</div>
+                        <div className="stat-title">Tingkat Kelulusan</div>
+                        <div className="stat-value text-blue-600">92%</div>
+                        <div className="stat-desc">Berhasil lulus ujian</div>
                     </div>
                 </div>
             </div>
 
-            {/* Main Content */}
-            <div>
-                <h1 className="text-center p-7 md:text-4xl text-2xl"><b>Platform Belajar Nyaman</b></h1>
-            </div>
-
-            <div className="flex w-full flex-col md:flex-row pe-4 px-4 pb-8 indicator items-center justify-center" id="Belajar">
-                <div className="card bg-base-100 w-96 shadow-sm">
-                    <figure>
-                        <img
-                            src="img/siners.png"
-                            alt="Sinersi" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title mb-4">SinersiMobile</h2>
-                        <p>Platform latihan UJI KOMPETENSI NERS Terbaik di Indonesia<br/> Pelatihan NERS terbaik dengan materi terupdate dari tim AIPNI buat kamu KOMPETEN di UKOMNAS</p>
-                        <div className="card-actions">
-                            <a href="https://sinersimobile.id"><button className="btn btn-info mt-5">Kunjungi</button></a>
+            {/* FAQ */}
+            <div className="container mx-auto px-4 py-12 md:py-16">
+                <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12" data-aos="fade-up">
+                    Pertanyaan yang Sering Diajukan
+                </h2>
+                
+                <div className="max-w-3xl mx-auto space-y-3 md:space-y-4">
+                    <div className="collapse collapse-plus bg-white shadow-md" data-aos="fade-up">
+                        <input type="radio" name="faq" /> 
+                        <div className="collapse-title text-base md:text-lg font-medium">
+                            Bagaimana sistem langganannya?
+                        </div>
+                        <div className="collapse-content"> 
+                            <p className="text-sm md:text-base">Kami menawarkan paket langganan dengan masa aktif hingga 3 bulan. Anda bisa memilih paket bulanan atau langsung 3 bulan dengan harga lebih hemat.</p>
                         </div>
                     </div>
-                </div>
-                <div className="divider md:divider-horizontal">Atau</div>
-                <div className="card bg-base-100 w-96 shadow-sm">
-                    <figure>
-                        <img
-                            src="img/sivoki.png"
-                            alt="Sivoki" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title mb-4">SivokiMobile</h2>
-                        <p>Platform Latihan Keperawatan Dengan Simulasi UKOMNAS <br/>Terdiri dari 800+ soal soal terupdate dan simulasi soal Try Out layaknya UKOM yang dibuat oleh tim AIPViKI</p>
-                        <div className="card-actions justify-end">
-                            <a href="https://sivokimobile.id"><button className="btn btn-info mt-5">Kunjungi</button></a>
+                    
+                    <div className="collapse collapse-plus bg-white shadow-md" data-aos="fade-up" data-aos-delay="100">
+                        <input type="radio" name="faq" /> 
+                        <div className="collapse-title text-base md:text-lg font-medium">
+                            Metode pembayaran apa saja yang tersedia?
+                        </div>
+                        <div className="collapse-content"> 
+                            <p className="text-sm md:text-base">Kami menerima pembayaran melalui QRIS, transfer bank (BCA, Mandiri, BRI, BNI), dan e-wallet (GoPay, OVO, Dana).</p>
+                        </div>
+                    </div>
+                    
+                    <div className="collapse collapse-plus bg-white shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <input type="radio" name="faq" /> 
+                        <div className="collapse-title text-base md:text-lg font-medium">
+                            Apakah materinya selalu diperbarui?
+                        </div>
+                        <div className="collapse-content"> 
+                            <p className="text-sm md:text-base">Ya, tim ahli kami secara rutin memperbarui materi sesuai perkembangan kurikulum terbaru dan kebutuhan ujian.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="bg-gray-100 py-12 px-4 text-center md:mx-50 mx-4 md:me-50 me-4 mb-5 rounded-2xl">
-                <div className="max-w-4xl mx-auto">
-                    <div className="text-sm uppercase font-bold tracking-wider mb-2">Upgrade Pengetahuanmu</div>
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6">Bersama Sinersi & Sivoki</h2>
-                    <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-                        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl btn-secondary motion-scale-loop-[1.25] motion-duration-[1000ms] motion-ease-in-out">Gabung Sekarang</button>
-                    </div>
-                    <p className="text-lg max-w-2xl mx-auto">
-                        Platform pembelajaran ners dan keperawatan lengkap dan terjamin.
+            {/* CTA */}
+            <div className="bg-blue-400 text-white py-12 md:py-16 text-center">
+                <div className="container mx-auto px-4" data-aos="zoom-in">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Siap Memulai Perjalanan Belajarmu?</h2>
+                    <p className="text-base md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto">
+                        Bergabunglah dengan ribuan peserta lainnya dan raih kesuksesan dalam ujianmu!
                     </p>
-                </div>
-            </div>
-
-            <div>
-                <h1 className="text-4xl px-4 py-7 text-center"><b>Pertanyaan Umum</b></h1>
-
-                <div className="m-4 mb-7">
-                    <div className="collapse collapse-arrow bg-base-100 border border-base-300">
-                        <input type="radio" name="my-accordion-2" defaultChecked />
-                        <div className="collapse-title font-semibold">Sistem langganan bagaimana?</div>
-                        <div className="collapse-content text-sm">Untuk Langganan kita menerapkan masa aktif sampai 3 bulan.</div>
-                    </div>
-                    <div className="collapse collapse-arrow bg-base-100 border border-base-300">
-                        <input type="radio" name="my-accordion-2" />
-                        <div className="collapse-title font-semibold">Untuk cara pembayaran bagaimana?</div>
-                        <div className="collapse-content text-sm">Untuk pembayaran bisa melalui Qris atau transfer bank.</div>
-                    </div>
-                    <div className="collapse collapse-arrow bg-base-100 border border-base-300">
-                        <input type="radio" name="my-accordion-2" />
-                        <div className="collapse-title font-semibold">Apakah Materinya terjamin?</div>
-                        <div className="collapse-content text-sm">Materi dari kami sudah pasti terjamin oleh para ahli.</div>
-                    </div>
+                    <a className="btn btn-info btn-md md:btn-lg px-8 md:px-10 text-white" href='#belajar'>
+                        Daftar Sekarang
+                    </a>
                 </div>
             </div>
         </main>
